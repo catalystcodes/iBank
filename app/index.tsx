@@ -1,5 +1,5 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
+import { View } from "react-native";
 
 export default function Index() {
   return (
@@ -10,9 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text>This is the main layout page </Text>
-      <Link href={"/(tabs)"}>Go to tab page</Link>
+      <Redirect href={"/(auth)/SignIn"} />
     </View>
   );
 }

@@ -5,11 +5,15 @@ export default function RootLayout() {
   return (
     <View style={styles.container}>
       <Stack
+        initialRouteName="test/index"
         screenOptions={{
           headerShown: false,
         }}
       >
-        <Stack.Screen name="index" />
+        <Stack.Screen name="(auth)/index" />
+        <Stack.Screen name="(auth)/SignUp" />
+        <Stack.Screen name="(auth)/SignIn" />
+        <Stack.Screen name="test/index" />
         <Stack.Screen name="(tabs)" />
       </Stack>
     </View>
