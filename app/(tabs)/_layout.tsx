@@ -2,7 +2,7 @@ import RenderLabel from "@/components/atoms/RenderLabel";
 import RenderBottomTabIcon from "@/components/molecules/RenderBottomTabIcon";
 import { Tabs } from "expo-router";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Platform, StyleSheet, View } from "react-native";
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -15,13 +15,11 @@ export default function TabLayout() {
         headerShown: false,
         tabBarLabelPosition: "beside-icon",
         tabBarShowLabel: false,
-        // tabBarInactiveTintColor: "#fff",
-        // tabBarActiveTintColor: "#fff",
-        // tabBarActiveBackgroundColor: "#3629B7",
+
         tabBarStyle: {
           paddingHorizontal: wp(8),
           paddingTop: hp(2.33),
-          //   height: hp(10.5),
+          paddingBottom: Platform.OS === "android" ? hp(5) : "auto",
         },
       }}
     >
@@ -42,7 +40,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="search"
+        name="Search"
         options={{
           tabBarIcon: ({ focused }) => (
             <View
@@ -58,7 +56,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="messages"
+        name="Messages"
         options={{
           tabBarIcon: ({ focused }) => (
             <View
@@ -78,7 +76,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="settings"
+        name="Settings"
         options={{
           tabBarIcon: ({ focused }) => (
             <View

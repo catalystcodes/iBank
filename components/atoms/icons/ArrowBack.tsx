@@ -6,7 +6,7 @@ type ArrowBackProps = SvgProps & {
 };
 
 const ArrowBack = ({ color = "#000", ...props }: ArrowBackProps) => (
-  <Svg width={24} height={24} fill="none" {...props}>
+  <Svg width={24} height={16} fill="none" {...props}>
     <Path
       fill={color}
       fillRule="evenodd"
