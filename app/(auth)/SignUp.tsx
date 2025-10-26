@@ -3,8 +3,9 @@ import PageHeader from "@/components/atoms/PageHeader";
 import AppInput from "@/components/molecules/AppInput";
 import KeyboardAvoidView from "@/components/molecules/KeyboardAvoidView";
 import { Checkbox } from "expo-checkbox";
+import { Link } from "expo-router";
 import React from "react";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -17,7 +18,7 @@ const SignUp = () => {
     <KeyboardAvoidView>
       <View style={{ flexGrow: 1, backgroundColor: "#3629B7" }}>
         <View style={styles.headerContainer}>
-          <PageHeader title="Sign up" showArrowBack />
+          <PageHeader title="Sign up" showArrowBack titleColor="#fff" />
         </View>
         <View style={styles.mainContainer}>
           <Text
@@ -68,7 +69,7 @@ const SignUp = () => {
               </Text>
             </Text>
           </View>
-          <AppButton text="Sign in" onPress={() => {}} />
+          <AppButton text="Sign up" onPress={() => {}} />
           <View
             style={{
               display: "flex",
@@ -79,7 +80,7 @@ const SignUp = () => {
             }}
           >
             <Text style={{ fontSize: wp(3.2) }}>Have an account? </Text>
-            <TouchableOpacity>
+            <Link href="/(auth)/SignIn">
               <Text
                 style={{
                   fontWeight: "600",
@@ -89,7 +90,7 @@ const SignUp = () => {
               >
                 Sign In
               </Text>
-            </TouchableOpacity>
+            </Link>
           </View>
         </View>
       </View>

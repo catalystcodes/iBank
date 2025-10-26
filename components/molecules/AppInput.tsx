@@ -82,12 +82,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
     height: hp(6.2),
     borderRadius: 15,
-    paddingLeft: wp(6.7),
+    paddingLeft: wp(3.2),
     zIndex: 1,
   },
   labelStyle: {
-    fontSize: 16,
-    marginBottom: hp(1),
-    // color: "#333",
+    fontSize: 12,
+    marginBottom: hp(0.9),
+    color: "#979797",
+    fontWeight: "600",
   },
 });

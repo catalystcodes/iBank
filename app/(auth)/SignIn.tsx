@@ -19,7 +19,7 @@ const SignIn = () => {
     <KeyboardAvoidView>
       <View style={{ flexGrow: 1, backgroundColor: "#3629B7" }}>
         <View style={styles.headerContainer}>
-          <PageHeader title="Sign in" showArrowBack />
+          <PageHeader title="Sign in" showArrowBack titleColor="#fff" />
         </View>
         <View style={styles.mainContainer}>
           <Text

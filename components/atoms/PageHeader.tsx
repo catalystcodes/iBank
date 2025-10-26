@@ -8,21 +8,23 @@ import {
 import ArrowBack from "./icons/ArrowBack";
 
 type PageHeaderProps = {
-  title: string;
+  title?: string;
   showArrowBack?: boolean;
   titleColor?: string;
+  arrowColor?: string;
 };
 
 const PageHeader = ({
   title,
   showArrowBack,
-  titleColor = "#fff",
+  titleColor = "#000",
+  arrowColor,
 }: PageHeaderProps) => {
   return (
     <View style={styles.container}>
       {showArrowBack && (
         <Pressable onPress={() => router.back()}>
-          <ArrowBack />
+          <ArrowBack color={arrowColor || titleColor} />
         </Pressable>
       )}
       <Text style={[styles.title, { color: titleColor }]}>{title}</Text>
