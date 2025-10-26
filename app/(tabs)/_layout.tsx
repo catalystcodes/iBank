@@ -2,7 +2,7 @@ import RenderLabel from "@/components/atoms/RenderLabel";
 import RenderBottomTabIcon from "@/components/molecules/RenderBottomTabIcon";
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -19,7 +19,7 @@ export default function TabLayout() {
         tabBarStyle: {
           paddingHorizontal: wp(8),
           paddingTop: hp(2.33),
-          paddingBottom: Platform.OS === "android" ? hp(5) : "auto",
+          paddingBottom: hp(4),
         },
       }}
     >
