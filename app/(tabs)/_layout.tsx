@@ -1,6 +1,6 @@
 import RenderLabel from "@/components/atoms/RenderLabel";
 import RenderBottomTabIcon from "@/components/molecules/RenderBottomTabIcon";
-import { Tabs } from "expo-router";
+import { Tabs, useSegments } from "expo-router";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import {
@@ -9,6 +9,10 @@ import {
 } from "react-native-responsive-screen";
 
 export default function TabLayout() {
+  const segments = useSegments() as string[];
+
+  const isInSearchNested =
+    segments.includes("Search") && segments[segments.length - 1] !== "Search";
   return (
     <Tabs
       screenOptions={{
@@ -20,6 +24,7 @@ export default function TabLayout() {
           paddingHorizontal: wp(8),
           paddingTop: hp(2.33),
           paddingBottom: hp(4),
+          display: isInSearchNested ? "none" : "flex",
         },
       }}
     >
@@ -30,7 +35,7 @@ export default function TabLayout() {
             <View
               style={[
                 styles.tabContainer,
-                focused ? styles.onFocusedStyles : "",
+                focused ? styles.onFocusedStyles : null,
               ]}
             >
               <RenderBottomTabIcon focused={focused} name="Home" />
@@ -40,13 +45,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="Search"
+        name={"Search"}
         options={{
           tabBarIcon: ({ focused }) => (
             <View
               style={[
                 styles.tabContainer,
-                focused ? styles.onFocusedStyles : "",
+                focused ? styles.onFocusedStyles : null,
               ]}
             >
               <RenderBottomTabIcon focused={focused} name="Search" />
@@ -62,7 +67,7 @@ export default function TabLayout() {
             <View
               style={[
                 styles.tabContainer,
-                focused ? styles.onFocusedStyles : "",
+                focused ? styles.onFocusedStyles : null,
               ]}
             >
               <RenderBottomTabIcon focused={focused} name="Messages" />
@@ -82,7 +87,7 @@ export default function TabLayout() {
             <View
               style={[
                 styles.tabContainer,
-                focused ? styles.onFocusedStyles : "",
+                focused ? styles.onFocusedStyles : null,
               ]}
             >
               <RenderBottomTabIcon focused={focused} name="Settings" />

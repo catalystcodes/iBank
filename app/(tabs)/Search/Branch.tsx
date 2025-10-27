@@ -1,0 +1,12 @@
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+
+export default function Branch() {
+  return (
+    <View>
+      <Text>Branch</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({});

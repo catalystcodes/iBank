@@ -69,3 +69,26 @@ export const HomeIcon = [
     label: "Beneficiary",
   },
 ] as const;
+
+export const searchData = [
+  {
+    title: "Branch",
+    label: "Search for branch",
+    img: require("../assets/images/Group 472.png"),
+  },
+  {
+    title: "Interest rate",
+    label: "Search for interest rate",
+    img: require("../assets/images/Group 477.png"),
+  },
+  {
+    title: "Exchange rate",
+    label: "Search for exchange rate",
+    img: require("../assets/images/Group 478.png"),
+  },
+  {
+    title: "Exchange",
+    label: "Exchange amount of money",
+    img: require("../assets/images/Group 490.png"),
+  },
+];
