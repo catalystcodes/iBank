@@ -92,3 +92,18 @@ export const searchData = [
     img: require("../assets/images/Group 490.png"),
   },
 ];
+
+export const settingMenu = [
+  {
+    title: "Password",
+  },
+  {
+    title: "Touch ID",
+  },
+  {
+    title: " Languages",
+  },
+  {
+    title: "App information",
+  },
+];

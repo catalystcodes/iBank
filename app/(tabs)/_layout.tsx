@@ -81,7 +81,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="Settings"
+        name={"Setting"}
         options={{
           tabBarIcon: ({ focused }) => (
             <View
