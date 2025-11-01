@@ -11,12 +11,15 @@ import {
 export default function Search() {
   return (
     <View style={styles.container}>
-      <PageHeader
-        arrowColor="black"
-        title="Search"
-        titleColor="Black"
-        showArrowBack
-      />
+      <View style={{ paddingLeft: wp(6.4), paddingBottom: hp(0.8) }}>
+        <PageHeader
+          arrowColor="black"
+          title="Search"
+          titleColor="Black"
+          showArrowBack
+        />
+      </View>
+
       <View style={styles.cardContainer}>
         {searchData.map((data, ind) => (
           <SearchCard {...data} key={ind} />
@@ -29,13 +32,15 @@ export default function Search() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#343434",
+    backgroundColor: "#fff",
     paddingTop: hp(2.9),
-    paddingHorizontal: wp(6.4),
   },
   cardContainer: {
-    marginTop: hp(2.8),
+    paddingHorizontal: wp(6.4),
+    paddingTop: hp(2),
     display: "flex",
     rowGap: hp(2.3),
+    flex: 1,
+    backgroundColor: "#F0F0F0",
   },
 });

@@ -106,4 +106,67 @@ export const settingMenu = [
   {
     title: "App information",
   },
+] as const;
+
+export const interestData = [
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Corporate customers",
+    deposit: "2m",
+    rate: "5.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Cooperate customers",
+    deposit: "6m",
+    rate: "2.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Cooperate customers",
+    deposit: "7m",
+    rate: "6.80%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "12m",
+    rate: "9.50%",
+  },
+  {
+    interestKind: "Individual customers",
+    deposit: "1m",
+    rate: "4.50%",
+  },
 ];
