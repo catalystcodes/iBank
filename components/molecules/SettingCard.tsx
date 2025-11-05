@@ -16,13 +16,13 @@ const SettingCard = ({ title }: { title: string }) => {
         push("/(tabs)/Setting/Password");
         break;
       case "Touch ID":
-        push("/Setting/TouchID");
+        push("/(tabs)/Setting/TouchID");
         break;
       case "Languages":
-        push("/Setting/Languages");
+        push("/(tabs)/Setting/Languages");
         break;
       case "App information":
-        push("/Setting/AppInfo");
+        push("/(tabs)/Setting/AppInfo");
         break;
     }
   };

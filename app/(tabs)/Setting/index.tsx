@@ -12,13 +12,7 @@ import {
 export default function Settings() {
   const router = useRouter();
 
-  const handleSettingPress = (href: string, title: string) => {
-    if (href) {
-      router.push(href as Href);
-    } else {
-      console.log(`No route defined for: ${title}`);
-    }
-  };
+
 
   return (
     <View style={styles.container}>
@@ -101,7 +95,6 @@ const styles = StyleSheet.create({
     marginBottom: hp(3.9),
   },
   menuContainer: {
-    // marginTop: hp(2),
     rowGap: hp(1.9),
     width: "100%",
   },

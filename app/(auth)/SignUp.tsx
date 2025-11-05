@@ -3,7 +3,7 @@ import PageHeader from "@/components/atoms/PageHeader";
 import AppInput from "@/components/molecules/AppInput";
 import KeyboardAvoidView from "@/components/molecules/KeyboardAvoidView";
 import { Checkbox } from "expo-checkbox";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import {
@@ -13,6 +13,9 @@ import {
 
 const SignUp = () => {
   const [isChecked, setChecked] = React.useState(false);
+  const handleSignUp = () => {
+    router.push("/(tabs)");
+  };
 
   return (
     <KeyboardAvoidView>
@@ -69,7 +72,7 @@ const SignUp = () => {
               </Text>
             </Text>
           </View>
-          <AppButton text="Sign up" onPress={() => {}} />
+          <AppButton text="Sign up" onPress={handleSignUp} />
           <View
             style={{
               display: "flex",

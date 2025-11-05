@@ -101,7 +101,7 @@ export const settingMenu = [
     title: "Touch ID",
   },
   {
-    title: " Languages",
+    title: "Languages",
   },
   {
     title: "App information",
@@ -168,5 +168,50 @@ export const interestData = [
     interestKind: "Individual customers",
     deposit: "1m",
     rate: "4.50%",
+  },
+];
+
+export const appInfo = [
+  { title: "Date of manufacture", desc: "Dec 2019" },
+  { title: " Version", desc: "9.0.2" },
+  { title: " Language", desc: "English" },
+];
+
+export const languageNLogo = [
+  {
+    language: "Vietnamese",
+    logo: require("../assets/images/CountriesFlags/Vietnamese.png"),
+  },
+  {
+    language: "French",
+    logo: require("../assets/images/CountriesFlags/france.png"),
+  },
+  {
+    language: "English",
+    logo: require("../assets/images/CountriesFlags/english.png"),
+  },
+  {
+    language: "Japanese",
+    logo: require("../assets/images/CountriesFlags/jp.png"),
+  },
+  {
+    language: "Portuguese",
+    logo: require("../assets/images/CountriesFlags/portugees.png"),
+  },
+  {
+    language: "China",
+    logo: require("../assets/images/CountriesFlags/china.png"),
+  },
+  {
+    language: "Korea",
+    logo: require("../assets/images/CountriesFlags/korea.png"),
+  },
+  {
+    language: "Nicaragua",
+    logo: require("../assets/images/CountriesFlags/nicara.png"),
+  },
+  {
+    language: "Russia",
+    logo: require("../assets/images/CountriesFlags/russia.png"),
   },
 ];
